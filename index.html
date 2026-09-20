@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharp Shooter Game</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>🎯 Sharp Shooter</h1>
+    </div>
+
+    <div class="dashboard">
+        <div class="stat-box">
+            <div class="stat-label">Score</div>
+            <div class="stat-value" id="score">0</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Time</div>
+            <div class="stat-value" id="timer">30s</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">Accuracy</div>
+            <div class="stat-value" id="accuracy">100%</div>
+        </div>
+        <div class="stat-box">
+            <div class="stat-label">High Score</div>
+            <div class="stat-value" id="high-score">0</div>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <div id="overlay">
+            <h2 id="overlay-title">Sharp Shooter</h2>
+            <p id="overlay-msg">Targets ko shoot karein aur high score banayein!</p>
+            <button class="btn" id="start-btn">Start Game</button>
+        </div>
+    </div>
+
+    <div class="instructions">
+        <span>🔴 Normal: +10 Points</span> | 
+        <span>🟡 Gold (Fast): +25 Points</span> | 
+        <span>💣 Bomb: -15 Points</span>
+    </div>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
